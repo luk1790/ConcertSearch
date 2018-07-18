@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="..\node_modules\materialize-css\dist\css\materialize.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="row">
+            <form class="col s8 offset-s2">
+                <div class="row">
+                    <div class="col s3">
+                        <div class="input-field inline">
+                            <input id="name" type="text" class="autocomplete" list="help-list">
+                            <label for="name" data-error="wrong" data-success="right">Artist Name</label>
+                            <datalist id="help-list" class="js-help-list">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                        <div class="input-field inline">
+                            <input id="date" type="text" class="datepicker datepicker-start">
+                            <label for="date" data-error="wrong" data-success="right">Start Date</label>
+                        </div>
+                    </div>
+                    <div class="col s3">
+                            <div class="input-field inline">
+                                <input id="date" type="text" class="datepicker datepicker-end">
+                                <label for="date" data-error="wrong" data-success="right">End Date</label>
+                            </div>
+                        </div>
+                    <div class="col s3">
+                            <div class="input-field inline">
+                        <a class="js-search-button waves-effect waves-light btn disabled">Search</a>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <table class="js-table highlight centered">
+                <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Date</th>
+                      <th>State</th>
+                      <th>City</th>
+                      <th>Url</th>
+                  </tr>
+                </thead>
+        
+                <tbody id='js-table-body'>
+                  
+                </tbody>
+              </table>
+        <div class="js-progress progress">
+            <div class="indeterminate"></div>
+        </div>
+    </div>
+    <script src="..\node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="..\node_modules\underscore\underscore-min.js"></script>
+    <script src="..\node_modules\backbone\backbone-min.js"></script>
+    <script src="..\node_modules\materialize-css\dist\js\materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
