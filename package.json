@@ -1,5 +1,5 @@
 {
-  "name": "ConcertSearch",
+  "name": "concert-search",
   "version": "1.0.0",
   "description": "wyszukiwania koncertów za pomocą JS przy użyciu API Bandsintown",
   "main": "index.js",
